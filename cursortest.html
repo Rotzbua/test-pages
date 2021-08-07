@@ -63,12 +63,19 @@
 <div style="background-color: yellow;" class="test7">AVIF</div>
 
 <h2>Image</h2>
-<img src="test.cur" alt="cur"><br>
-<img src="test.ani" alt="ani"><br>
-<img src="test.gif" alt="gif"><br>
-<img src="test.apng" alt="apng"><br>
-<img src="test.webp" alt="webp"><br>
-<img src="test.avif" alt="avif"><br>
+<img src="test2.cur" alt="cur"><br>
+<img src="test2.ani" alt="ani"><br>
+<img src="test2.gif" alt="gif"><br>
+<img src="test2.apng" alt="apng"><br>
+<img src="test2.webp" alt="webp"><br>
+<img src="test2.avif" alt="avif"><br>
+
+<h2>Findings</h2>
+<ul>
+  <li>Animation with cursors are not supported.</li>
+  <li>.ani is not supported by any current browser (8/2021).</li>
+  <li>Bug with FF90 if image is rendered as img-tag the cursor image also changes. Without img-tag the rendered image is static.</li>
+</ul>
 
 </body>
 </html>
