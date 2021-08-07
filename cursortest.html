@@ -3,10 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>cur ani test</title>
-  <base href="/">
+  <base href="./">
+  <meta name="referrer" content="no-referrer">
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+    }
+
+    .test0 {
+      cursor: help !important;
+    }
+
+    .test1 {
+      cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto !important;
+    }
+
+    .test2 {
+      cursor: url(test.cur), auto !important;
+    }
+
+    .test3 {
+      cursor: url(test.ani), auto !important;
+    }
+  </style>
 </head>
 <body>
-<div style="width: 50px;height: 50px; cursor: url('test.cur'); background-color: blue;">CUR</div>
-<div style="width: 50px;height: 50px; cursor: url('test.ani'); background-color: yellow;">ANI</div>
+<div style="background-color: red;" class="test0">Default help</div>
+<div style="background-color: yellow;" class="test1">Extern</div>
+<div style="background-color: red;" class="test2">CUR</div>
+<div style="background-color: yellow;" class="test3">ANI</div>
 </body>
 </html>
